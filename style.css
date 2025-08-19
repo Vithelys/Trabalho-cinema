@@ -1,0 +1,97 @@
+body {
+    /*Tira as bordas pradões*/
+    margin: 10px;
+}
+
+/*Estilo do Cabeçalho*/
+header {
+    background-color: black;
+    color: maroon;
+    /*Coloca os textos na mesma linha*/
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    /*Permite quebra em tale pequena*/
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    font-weight:bold; 
+    color: red;
+}
+/*Só os links dentro de naw*/
+naw a {
+    color: white;
+    /* Tire o sublinhado*/
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.banner {
+    background: url('blob:https://chatgpt.com/c45fa0ff-a12a-47ae-a797-662e8f82ae2a') center / cover;
+    height: 600px;
+}
+.section-title {
+    font-size: 50px;
+    padding: 20px;
+    font-family: "Pacifico", cursive;
+    color: black;
+}
+
+/* Filme*/
+.Movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 20px;
+    padding: 0 20px 20px;
+}
+
+.Movie-card {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    /*Para posicionar o rating*/
+    position: relative;
+}
+
+/*Imagem do filme*/
+.Movie-card img {
+    height: 600px;
+    /*Posiconar a largura da imagem*/
+    width: 70%;
+    object-fit:cover;
+    position:relative;
+    overflow:relative;
+}
+
+.Movie-card h3 {
+    font-size: large;
+    margin: 10px 0 5px;
+}
+
+/*Nota do filme*/
+.rating {
+    /*posicionar em relação ao cartão*/
+    position: absolute;
+    /*Distancia do topo do cartão*/
+    top: 20px;
+    /*Distámcia da esquerda do cartão*/
+    left: 10px;
+    background-color: blueviolet;
+    color: aqua;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.Movie-card span {
+    display: block;
+    font-size: 10px;
+    color: aquamarine;
+    margin-bottom: 10x;
+
+}
